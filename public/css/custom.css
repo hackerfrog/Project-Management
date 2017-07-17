@@ -1,0 +1,71 @@
+/* Main Page */
+* {
+	font-family: 'Raleway';
+}
+.main .navbar {
+	border-radius: 0px;
+	background: #0079bf;
+}
+.main .navbar a {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 24px;
+}
+.main .navbar button {
+	font-family: 'Raleway';
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 6px 16px;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+.main .navbar button.login {
+	background: #00579d;
+}
+.main .navbar button.signup {
+	background: #61bd4f;
+}
+.main .navbar button.login:hover {
+	background: #00468c;
+}
+.main .navbar button.signup:hover {
+	background: #50ac3e;
+}
+
+.intro-block {
+	margin-top: -20px;
+	background: url('../img/intro-block.jpg') center left / cover no-repeat #0079bf;
+	padding: 100px 0px;
+	text-align: center;
+}
+.intro-block .text,
+.intro-block .text-small {
+	max-width: 600px;
+	color: #ffffff;
+	margin: 0 auto;
+}
+.intro-block .text {
+	font-size: 32px;
+	font-weight: bold;
+}
+.intro-block .text-small {
+	margin: 12px auto;
+	font-size: 18px;
+}
+.intro-block button {
+	font-family: 'Raleway';
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 12px 32px;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+	background: #61bd4f;
+}
+.intro-block button:hover {
+	color: #ffffff;
+	background: #50ac3e;
+}
+.intro-block a {
+	color: #ffffff;
+	text-decoration: underline;
+}
