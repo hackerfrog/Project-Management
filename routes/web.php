@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('welcome', function() {
 	return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('home', 'HomeController@index')->name('home');
+
+Route::get('new', 'NewController@index')->name('new');
+
+Route::post('new', 'NewController@new')->name('new');
+
+Route::get('project/{id}', array(
+	'as'	=> 'project.show',
+	'uses'	=> 'ProjectController@show'));
