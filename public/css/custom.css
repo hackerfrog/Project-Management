@@ -1,17 +1,20 @@
-/* Main Page */
 * {
 	font-family: 'Raleway';
 }
-.main .navbar {
-	border-radius: 0px;
-	background: #0079bf;
+input,
+textarea {
+	font-family: sans-serif;
 }
-.main .navbar a {
+.navbar {
+	border-radius: 0px;
+	background: #026AA7;
+}
+.navbar a {
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 24px;
 }
-.main .navbar button {
+.navbar button {
 	font-family: 'Raleway';
 	color: #ffffff;
 	font-weight: bold;
@@ -19,17 +22,52 @@
 	padding: 6px 16px;
 	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
 }
-.main .navbar button.login {
+.navbar button.login {
 	background: #00579d;
 }
-.main .navbar button.signup {
+.navbar button.signup {
 	background: #61bd4f;
 }
-.main .navbar button.login:hover {
+.navbar button.login:hover {
 	background: #00468c;
 }
-.main .navbar button.signup:hover {
+.navbar button.signup:hover {
 	background: #50ac3e;
+}
+.navbar li a {
+	font-size: 16px;
+}
+.navbar li a:hover,
+.navbar li a:active,
+.navbar li a:focus {
+	background: #00468c;
+}
+.nav .open>a:hover,
+.nav .open>a:active,
+.nav .open>a:focus {
+	background: #00468c;	
+}
+ul.dropdown-menu {
+	baackground-color: #50ac3e; 
+}
+ul.dropdown-menu li a {
+	font-size: 12px;
+	font-weight: bold;
+}
+ul.dropdown-menu li a:hover,
+ul.dropdown-menu li a:active,
+ul.dropdown-menu li a:focus {
+	background-color: #eeeeee;
+	font-weight: bold;
+}
+
+.panel-heading {
+	font-weight: bold;
+}
+
+.text-small {
+	font-weight: bold !important;
+	font-size: 12px;
 }
 
 .intro-block {
@@ -68,4 +106,54 @@
 .intro-block a {
 	color: #ffffff;
 	text-decoration: underline;
+}
+.app {
+	background-color: #0079bf;
+}
+
+.btn-main {
+	font-family: 'Raleway';
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 6px 16px;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+	background: #00579d;
+}
+.btn-main:hover {
+	color: #ffffff;
+	background: #00468c;
+}
+.btn-green {
+	font-family: 'Raleway';
+	color: #ffffff;
+	font-weight: bold;
+	border-radius: 8px;
+	padding: 6px 16px;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+	background: #61bd4f;
+}
+.btn-green:hover {
+	color: #ffffff;
+	background: #50ac3e;
+}
+
+.new .detail {
+	font-weight: bold;
+	font-size: 10px;
+	padding: 8px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.color-white {
+	color: #ffffff;
+}
+
+.projects a:hover {
+	text-decoration: none;
+}
+.projects .panel-body {
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #333333;
 }
