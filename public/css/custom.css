@@ -157,3 +157,68 @@ ul.dropdown-menu li a:focus {
 	text-decoration: none;
 	color: #333333;
 }
+
+.project {
+	padding: 0px 12px;
+}
+.project .heading {
+	font-weight: bold;
+	color: #ffffff;
+}
+.project .area {
+	user-select: none;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    top: 100px;
+    right: 8px;
+    left: 12px;
+    bottom: 0px;
+}
+.project .area .board {
+	padding: 8px;
+	background-color: #eeeeee;
+	width: 280px;
+	margin-right: 12px;
+	border-radius: 4px;
+	max-height: 100%;
+	overflow: scroll;
+	overflow-x: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+.area::-webkit-scrollbar {
+	height: 8px;
+}
+.board::-webkit-scrollbar {
+	width: 8px;
+}
+.area::-webkit-scrollbar-track,
+.board::-webkit-scrollbar-track {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.2);
+}
+.area::-webkit-scrollbar-thumb,
+.board::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.3);
+}
+.project .area .board .title {
+	font-weight: bold;
+	text-align: center;
+}
+
+.project .area .board .card {
+	background-color: #ffffff;
+	border-radius: 3px;
+	padding: 8px;
+	margin: 8px 0;
+	border-bottom: 1px solid #cccccc;
+}
+.project .area .board .card .title {
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: left;
+}

@@ -17,9 +17,9 @@ class NewController extends Controller
 
     public function index() {
 
-        $id = Auth::user()->id;
-        $data['recentProjects'] = DB::table('projects')->where('owner', $id)->orderBy('updated_at')->limit(5)->get();
-        $data['projects']       = DB::table('projects')->where('owner', $id)->orderBy('name')->get();
+        $Userid = Auth::user()->id;
+        $data['recentProjects'] = DB::table('projects')->where('owner', $Userid)->orderBy('updated_at')->limit(5)->get();
+        $data['projects']       = DB::table('projects')->where('owner', $Userid)->orderBy('name')->get();
 
         return view('new')->with('data', $data);
     }
